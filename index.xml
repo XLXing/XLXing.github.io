@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XLXing</title>
+    <link>http://XLXing.github.io/</link>
+    <description>Recent content on XLXing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Sep 2017 11:07:29 +0800</lastBuildDate>
+    
+	<atom:link href="http://XLXing.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First</title>
+      <link>http://XLXing.github.io/post/first/</link>
+      <pubDate>Thu, 07 Sep 2017 11:07:29 +0800</pubDate>
+      
+      <guid>http://XLXing.github.io/post/first/</guid>
+      <description>HELLO FANG!</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://XLXing.github.io/about/</link>
+      <pubDate>Thu, 07 Sep 2017 11:07:12 +0800</pubDate>
+      
+      <guid>http://XLXing.github.io/about/</guid>
+      <description>HELLO FANG!</description>
+    </item>
+    
+  </channel>
+</rss>

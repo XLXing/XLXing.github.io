@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://XLXing.github.io/sitemap.xml
