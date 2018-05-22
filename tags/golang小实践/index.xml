@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on xlxing</title>
-    <link>http://xlxing.github.io/post/</link>
-    <description>Recent content in Posts on xlxing</description>
+    <title>Golang小实践 on xlxing</title>
+    <link>http://xlxing.github.io/tags/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/</link>
+    <description>Recent content in Golang小实践 on xlxing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 May 2018 13:38:05 +0800</lastBuildDate>
     
-	<atom:link href="http://xlxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xlxing.github.io/tags/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://xlxing.github.io/post/golang%E5%AE%9E%E7%8E%B0%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
       <description>以下排序算法的思想网上都可以搜到相对应的介绍，这里不再赘述，直接给出代码实现： package main import ( &amp;quot;fmt&amp;quot; ) // 冒泡排序 func bubbleSort(s []int) { for i := 0; i &amp;lt; len(s); i++ { for j := i + 1; j</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>http://xlxing.github.io/post/welcome/</link>
-      <pubDate>Tue, 22 May 2018 13:31:45 +0800</pubDate>
-      
-      <guid>http://xlxing.github.io/post/welcome/</guid>
-      <description>让我们一起徜徉在浩瀚的博客海洋中吧！！！</description>
     </item>
     
   </channel>

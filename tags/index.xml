@@ -6,9 +6,19 @@
     <description>Recent content in Tags on xlxing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 22 May 2018 13:38:05 +0800</lastBuildDate>
     
 	<atom:link href="http://xlxing.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang小实践</title>
+      <link>http://xlxing.github.io/tags/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Tue, 22 May 2018 13:38:05 +0800</pubDate>
+      
+      <guid>http://xlxing.github.io/tags/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
