@@ -6,18 +6,18 @@
     <description>Recent content on xlxing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Sep 2017 11:07:12 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 May 2018 13:31:45 +0800</lastBuildDate>
     
 	<atom:link href="http://xlxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
-      <link>http://xlxing.github.io/about/</link>
-      <pubDate>Thu, 07 Sep 2017 11:07:12 +0800</pubDate>
+      <title>Welcome</title>
+      <link>http://xlxing.github.io/post/welcome/</link>
+      <pubDate>Tue, 22 May 2018 13:31:45 +0800</pubDate>
       
-      <guid>http://xlxing.github.io/about/</guid>
-      <description>HELLO FANG!</description>
+      <guid>http://xlxing.github.io/post/welcome/</guid>
+      <description>让我们一起徜徉在浩瀚的博客海洋中吧！！！</description>
     </item>
     
   </channel>
