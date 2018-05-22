@@ -23,7 +23,14 @@
   </url>
   
   <url>
-    <loc>http://xlxing.github.io/tags/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/</loc>
+    <loc>http://xlxing.github.io/tags/golang/</loc>
+    <lastmod>2018-05-22T13:38:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xlxing.github.io/categories/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2018-05-22T13:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -45,6 +52,13 @@
   
   <url>
     <loc>http://xlxing.github.io/</loc>
+    <lastmod>2018-05-22T13:38:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xlxing.github.io/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2018-05-22T13:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
