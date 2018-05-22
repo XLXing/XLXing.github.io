@@ -6,10 +6,19 @@
     <description>Recent content in Golang小实践 on xlxing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 May 2018 13:38:05 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 May 2018 20:02:00 +0800</lastBuildDate>
     
 	<atom:link href="http://xlxing.github.io/categories/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang实现的一个扫描指定文件夹下所有中文所在行的小工具</title>
+      <link>http://xlxing.github.io/post/golang%E5%AE%9E%E7%8E%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E6%89%AB%E6%8F%8F%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E4%B8%AD%E6%96%87%E6%89%80%E5%9C%A8%E8%A1%8C%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Tue, 22 May 2018 20:02:00 +0800</pubDate>
+      
+      <guid>http://xlxing.github.io/post/golang%E5%AE%9E%E7%8E%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E6%89%AB%E6%8F%8F%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E4%B8%AD%E6%96%87%E6%89%80%E5%9C%A8%E8%A1%8C%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/</guid>
+      <description>由于逻辑比较简单废话不多说直接上代码： package main import ( &amp;quot;bufio&amp;quot; &amp;quot;fmt&amp;quot; &amp;quot;io&amp;quot; &amp;quot;io/ioutil&amp;quot; &amp;quot;os&amp;quot; &amp;quot;strings&amp;quot; &amp;quot;unicode&amp;quot; ) var write *os.File func IsChineseChar(str string) bool { for _, r := range str { if unicode.Is(unicode.Scripts[&amp;quot;Han&amp;quot;], r) { return true } } return false } func scanAll(path string) { files, _ := ioutil.ReadDir(path) for _, fi := range</description>
+    </item>
     
     <item>
       <title>Golang实现常用的排序算法</title>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Golang实现的一个扫描指定文件夹下所有中文所在行的小工具 - xlxing</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="xlxing" />
+  <meta name="description" content="由于逻辑比较简单废话不多说直接上代码： package main import ( &amp;quot;bufio&amp;quot; &amp;quot;fmt&amp;quot; &amp;quot;io&amp;quot; &amp;quot;io/ioutil&amp;quot; &amp;quot;os&amp;quot; &amp;quot;strings&amp;quot; &amp;quot;unicode&amp;quot; ) var write *os.File func IsChineseChar(str string) bool { for _, r := range str { if unicode.Is(unicode.Scripts[&amp;quot;Han&amp;quot;], r) { return true } } return false } func scanAll(path string) { files, _ := ioutil.ReadDir(path) for _, fi := range" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.3" />
+
+
+<link rel="canonical" href="http://xlxing.github.io/post/golang%E5%AE%9E%E7%8E%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E6%89%AB%E6%8F%8F%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E4%B8%AD%E6%96%87%E6%89%80%E5%9C%A8%E8%A1%8C%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.min.css?v=2.5.0" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Golang实现的一个扫描指定文件夹下所有中文所在行的小工具" />
+<meta property="og:description" content="由于逻辑比较简单废话不多说直接上代码： package main import ( &quot;bufio&quot; &quot;fmt&quot; &quot;io&quot; &quot;io/ioutil&quot; &quot;os&quot; &quot;strings&quot; &quot;unicode&quot; ) var write *os.File func IsChineseChar(str string) bool { for _, r := range str { if unicode.Is(unicode.Scripts[&quot;Han&quot;], r) { return true } } return false } func scanAll(path string) { files, _ := ioutil.ReadDir(path) for _, fi := range" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://xlxing.github.io/post/golang%E5%AE%9E%E7%8E%B0%E7%9A%84%E4%B8%80%E4%B8%AA%E6%89%AB%E6%8F%8F%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E4%B8%AD%E6%96%87%E6%89%80%E5%9C%A8%E8%A1%8C%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/" />
+
+
+
+<meta property="article:published_time" content="2018-05-22T20:02:00&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-05-22T20:02:00&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Golang实现的一个扫描指定文件夹下所有中文所在行的小工具">
+<meta itemprop="description" content="由于逻辑比较简单废话不多说直接上代码： package main import ( &quot;bufio&quot; &quot;fmt&quot; &quot;io&quot; &quot;io/ioutil&quot; &quot;os&quot; &quot;strings&quot; &quot;unicode&quot; ) var write *os.File func IsChineseChar(str string) bool { for _, r := range str { if unicode.Is(unicode.Scripts[&quot;Han&quot;], r) { return true } } return false } func scanAll(path string) { files, _ := ioutil.ReadDir(path) for _, fi := range">
+
+
+<meta itemprop="datePublished" content="2018-05-22T20:02:00&#43;08:00" />
+<meta itemprop="dateModified" content="2018-05-22T20:02:00&#43;08:00" />
+<meta itemprop="wordCount" content="224">
+
+
+
+<meta itemprop="keywords" content="golang," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Golang实现的一个扫描指定文件夹下所有中文所在行的小工具"/>
+<meta name="twitter:description" content="由于逻辑比较简单废话不多说直接上代码： package main import ( &quot;bufio&quot; &quot;fmt&quot; &quot;io&quot; &quot;io/ioutil&quot; &quot;os&quot; &quot;strings&quot; &quot;unicode&quot; ) var write *os.File func IsChineseChar(str string) bool { for _, r := range str { if unicode.Is(unicode.Scripts[&quot;Han&quot;], r) { return true } } return false } func scanAll(path string) { files, _ := ioutil.ReadDir(path) for _, fi := range"/>
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">xlxing</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">xlxing</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Golang实现的一个扫描指定文件夹下所有中文所在行的小工具</h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-05-22
+        </span>
+        <div class="post-category">
+            <a href="/categories/golang%E5%B0%8F%E5%AE%9E%E8%B7%B5/">golang小实践</a>
+          </div>
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>
+<strong>由于逻辑比较简单废话不多说直接上代码：</strong></p>
+
+<pre><code>package main
+
+import (
+	&quot;bufio&quot;
+	&quot;fmt&quot;
+	&quot;io&quot;
+	&quot;io/ioutil&quot;
+	&quot;os&quot;
+	&quot;strings&quot;
+	&quot;unicode&quot;
+)
+
+var write *os.File
+
+func IsChineseChar(str string) bool {
+	for _, r := range str {
+		if unicode.Is(unicode.Scripts[&quot;Han&quot;], r) {
+			return true
+		}
+	}
+	return false
+}
+
+func scanAll(path string) {
+	files, _ := ioutil.ReadDir(path)
+	for _, fi := range files {
+		if fi.Name() != &quot;chinese.txt&quot; &amp;&amp; !strings.Contains(fi.Name(), &quot;XXX&quot;) {
+			if fi.IsDir() {
+				//过滤条件（某些文件夹不进入）
+				if !strings.Contains(fi.Name(), &quot;XXX&quot;) {
+					scanAll(path + &quot;/&quot; + fi.Name())
+				}
+			} else {
+				//只扫描go文件
+				if strings.Contains(fi.Name(), &quot;.go&quot;) {
+					file, _ := os.Open(path + &quot;/&quot; + fi.Name())
+					buffer := bufio.NewReader(file)
+					flag := true
+					for {
+						s, _, ok := buffer.ReadLine()
+						canWrite := true
+						if strings.Contains(string(s), &quot;//&quot;){
+							canWrite = false
+						}
+						if strings.Contains(string(s), &quot;/*&quot;) {
+							flag = false
+						}
+						if ok == io.EOF {
+							break
+						}
+						if flag &amp;&amp; canWrite &amp;&amp; IsChineseChar(string(s)) {
+							write.WriteString(string(s) + &quot;\n&quot;)
+						}
+						if strings.Contains(string(s), &quot;*/&quot;) {
+							flag = true
+						}
+					}
+					file.Close()
+				}
+			}
+		}
+	}
+}
+
+func main() {
+	defer write.Close()
+	var err error
+	write, err = os.OpenFile(&quot;chinese.txt&quot;, os.O_RDWR|os.O_CREATE, 0766)
+	if err != nil {
+		fmt.Println(&quot;chinese.txt Read Err:&quot;, err)
+		return
+	}
+	scanAll(&quot;.&quot;)
+}
+</code></pre>
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/golang/">golang</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/golang%E5%AE%9E%E7%8E%B0%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">
+            <span class="next-text nav-default">Golang实现常用的排序算法</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+      </div>  
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+        <a href="mailto:xianglixingff@126.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://github.com/xlxing" class="iconfont icon-github" title="github"></a>
+  <a href="http://xlxing.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">xlxing</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="/dist/even.min.js?v=2.5.0"></script>
+
+
+
+
+
+
+</body>
+</html>
