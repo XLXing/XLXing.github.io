@@ -6,10 +6,19 @@
     <description>Recent content on xlxing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 May 2018 20:02:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 11:52:05 +0800</lastBuildDate>
     
 	<atom:link href="http://xlxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raft算法详解</title>
+      <link>http://xlxing.github.io/post/raft%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 03 Dec 2018 11:52:05 +0800</pubDate>
+      
+      <guid>http://xlxing.github.io/post/raft%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
+      <description>名词解释： 非拜占庭：把出现故障但不会伪造信息的错误称为非拜占庭。 拜占庭：把伪造信息恶意响应的情况称为拜占庭。 Raft算法 1.什么是分布式一致</description>
+    </item>
     
     <item>
       <title>Golang实现的一个扫描指定文件夹下所有中文所在行的小工具</title>

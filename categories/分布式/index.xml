@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分布式 on xlxing</title>
+    <link>http://xlxing.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F/</link>
+    <description>Recent content in 分布式 on xlxing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Dec 2018 11:52:05 +0800</lastBuildDate>
+    
+	<atom:link href="http://xlxing.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raft算法详解</title>
+      <link>http://xlxing.github.io/post/raft%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 03 Dec 2018 11:52:05 +0800</pubDate>
+      
+      <guid>http://xlxing.github.io/post/raft%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
+      <description>名词解释： 非拜占庭：把出现故障但不会伪造信息的错误称为非拜占庭。 拜占庭：把伪造信息恶意响应的情况称为拜占庭。 Raft算法 1.什么是分布式一致</description>
+    </item>
+    
+  </channel>
+</rss>
